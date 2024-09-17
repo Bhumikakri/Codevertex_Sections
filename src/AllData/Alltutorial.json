@@ -1,0 +1,113 @@
+[
+  {
+    "id": "1",
+    "Title": "OOPS (Java)",
+    "Desc": "",
+    "Start": "June 1,2024",
+    "thumb": "https://ideogram.ai/assets/image/lossless/response/rPcypuO2RCqo3h7qyOqgMg",
+    "Details": [
+      {
+        "Topics": "What is oops",
+        "TopicsDescription": "In this article, we will learn about the Object-Oriented Programming (OOP) paradigm in Java and its key concepts.",
+        "FUlldetails": [
+          {
+            "heading": "What is OOP ?",
+            "fullDescription": "Object-Oriented Programming (OOP) in Java follows the same fundamental principles as in other languages. Java, being a strongly object-oriented language, encourages the use of objects and classes for structuring code, making it easier to manage, scale, and maintain."
+          },
+          {
+            "heading": "Key Concepts of OOP in Java",
+            "fullDescription": "1. Class: A blueprint for creating objects. It defines properties (fields) and methods (functions).\n\n\n 2. Object: An instance of a class.\n3. Encapsulation: Protecting data by restricting access to methods.\n4. Inheritance: Allowing one class to inherit features from another.\n5. Polymorphism: Using a single method or function that behaves differently based on the object calling it.\n6. Abstraction: Hiding complex implementation details and showing only the functionality."
+          },
+          {
+            "heading": "Example Code: OOP in Java",
+            "fullDescription": "// Base Class (Parent)\nclass Animal {\n    protected String name;\n\n    // Constructor\n    public Animal(String name) {\n        this.name = name;\n    }\n\n    // Method that will be overridden\n    public void speak() {\n        System.out.println(\"This animal makes a sound.\");\n    }\n}\n\n// Derived Class (Child)\nclass Dog extends Animal {\n    private String breed;\n\n    // Constructor\n    public Dog(String name, String breed) {\n        super(name);  // Call to parent class constructor\n        this.breed = breed;\n    }\n\n    // Overriding the speak method\n    @Override\n    public void speak() {\n        System.out.println(name + \" says Woof!\");\n    }\n}\n\n// Another Derived Class (Child)\nclass Cat extends Animal {\n    private String color;\n\n    // Constructor\n    public Cat(String name, String color) {\n        super(name);\n        this.color = color;\n    }\n\n    // Overriding the speak method\n    @Override\n    public void speak() {\n        System.out.println(name + \" says Meow!\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating objects of Dog and Cat\n        Dog dog = new Dog(\"Buddy\", \"Golden Retriever\");\n        Cat cat = new Cat(\"Whiskers\", \"Gray\");\n\n        // Calling the speak method\n        dog.speak(); // Outputs: Buddy says Woof!\n        cat.speak(); // Outputs: Whiskers says Meow!\n\n        // Demonstrating Polymorphism\n        Animal[] animals = {dog, cat};\n        for (Animal animal : animals) {\n            animal.speak();  // Calls the appropriate speak method based on the object's type\n        }\n    }\n}\n"
+          },
+          {
+            "heading": "Explanation",
+            "fullDescription": "1. Class Animal: This is the base class (or parent class). It has a constructor that takes the animal’s name and a method speak(), which is overridden by child classes.\n2. Class Dog and Cat: These are child classes inheriting from Animal. Each class has its own constructor and overrides the speak() method to provide specific behavior (i.e., what sound the animal makes).\n3. Polymorphism: We create an array of type Animal, but it holds objects of both Dog and Cat. When we call the speak() method on each element, Java determines which speak() method to execute based on the actual object type (either Dog or Cat)."
+          },
+          {
+            "heading": "Output",
+            "fullDescription": "Buddy says Woof!\nWhiskers says Meow!\nBuddy says Woof!\nWhiskers says Meow!"
+          },
+          {
+            "heading": "Conclusion",
+            "fullDescription": "This example demonstrates the core OOP principles of encapsulation, inheritance, polymorphism, and abstraction in Java. By defining reusable classes and methods, OOP helps make code modular, easier to maintain, and scalable."
+          }
+        ]
+      },
+      {
+        "Topics": "what is Classes in Java OOP's",
+        "TopicsDescription": "In Java's Object-Oriented Programming (OOP), a *class* is a blueprint or template that defines the structure and behavior (fields and methods) that the objects created from it will have. In other words, a class encapsulates data for the object and methods to manipulate that data.",
+        "FUlldetails": [
+          {
+            "heading": " Key Characteristics of a Class in Java :",
+            "fullDescription": "1. *Fields (Attributes/Properties)*: Variables that hold the data or state of an object.\n\n 2. *Methods (Functions/Behaviors)*: Operations or actions that an object can perform. These usually manipulate the object's internal state or perform some task.\n\n 3. *Constructors*: Special methods that are called when an object of the class is instantiated (created). They initialize the object's properties."
+          },
+          {
+            "heading": " Syntax of a Class",
+            "fullDescription": "java\nclass ClassName { \n\n// Fields (Attributes) \nint field1; \nString field2;\b\n// Constructor\b \npublic ClassName(int field1, String field2) {\n this.field1 = field1;\nthis.field2 = field2;\n}\b\b\n// Method\n\b\npublic void displayFields() {\nSystem.out.println('Field 1:  '+ field1);\nSystem.out.println('Field 2: ' + field2);\b\n}\n}"
+          },
+          {
+            "heading": " Example: Defining and Using a Class in Java",
+            "fullDescription": "Object-Oriented Programming (OOP) is a programming paradigm used to solve real-world problems. It involves dividing a program into objects that can communicate with each other. Each object, representing a real-world entity, has its own properties and behaviors. The fundamental idea of OOP is to combine these properties and behaviors to promote modularity and reusability.\n\nOOP promotes modularity by encapsulating data and behavior within objects, allowing for better organization and management of code. For example, consider a real-world entity like a student:\n\nstudent {\n  int rollNo;\n  String name;\n  int age;\n  int numberOfSubjects;\n  void sleep() { }\n  void bunk() { }\n  void study() { }\n}\n\nIn this example, the student object has properties like roll number, name, age, and number of subjects, as well as behaviors like sleep, bunk, and study.\n\nOOP also emphasizes concepts like encapsulation, inheritance, and polymorphism, which help create modular, reusable, and scalable software systems."
+          },
+          {
+            "heading": " Explanation:",
+            "fullDescription": "*Fields*: The Car class has three fields: model, color, and year, which represent the characteristics of the car.\n\n*Constructor*: The constructor takes three arguments (model, color, and year) and initializes the fields of the object when it is created.\n\n3. *Methods*: - displayCarInfo() prints the car's details.- startCar() simulates starting the car by printing a message.*\n\n *Objects*: In the main() method, two objects (car1 and car2) are created from the Car class, and their methods are called to display their information and simulate starting the car. "
+          },
+          {
+            "heading": "Attributes and Behaviours",
+            "fullDescription": "### Attributes\n\nAttributes, also known as properties or fields, are variables that hold data specific to an object. They define the state of an object and are typically represented as nouns. Attributes are essential for distinguishing one object from another within the same class.\n\n**Example:** Consider a `Student` class. The attributes might include:\n\n- **Name:** The student's name\n- **ID:** The student's identification number\n- **Age:** The student's age\n- **Marks:** The student's marks\n\n### Behaviors\n\nBehaviors, also known as methods or functions, are actions that objects can perform. They define the functionality of the class and are typically represented as verbs. Behaviors operate on the attributes of the class to perform specific tasks.\n\n**Example:** Continuing with the `Student` class, behaviors might include:\n\n- **Display:** Show student details\n- **Update Marks:** Change the student's marks\n- **Calculate Average:** Compute the average of the student's marks"
+          },
+          {
+            "heading": "Conclusion",
+            "fullDescription": "### Conclusion\n\nObject-Oriented Programming (OOP) is a programming paradigm designed to solve real-world problems by modeling code objects similarly to real-world entities. By using classes and objects to structure code, OOP principles are applied to create modular and reusable software.\n\n**Key Points:**\n- **Classes and Objects:** Serve as the fundamental building blocks of OOP.\n- **Popular Languages:** Java, C++, and JavaScript are some major object-oriented languages.\n\n**Example: Student Class in Java**\n```java\npublic class Student {\n    private String name;\n    private int id;\n    private int age;\n    private int nos;\n\n    // Default constructor\n    public Student() {\n        this.name = \"Unknown\";\n        this.id = 0;\n        this.age = 0;\n        this.nos = 0;\n    }\n\n    // Parameterized constructor\n    public Student(String name, int id, int age, int nos) {\n        this.name = name;\n        this.id = id;\n        this.age = age;\n        this.nos = nos;\n    }\n\n    // Copy constructor\n    public Student(Student student) {\n        this.name = student.name;\n        this.id = student.id;\n        this.age = student.age;\n        this.nos = student.nos;\n    }\n\n    // Display method\n    public void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"ID: \" + id);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"Number of subjects: \" + nos);\n    }\n\n    public static void main(String[] args) {\n        // Using default constructor\n        Student student1 = new Student();\n        student1.display();\n\n        // Using parameterized constructor\n        Student student2 = new Student(\"Yash\", 101, 20, 5);\n        student2.display();\n\n        // Using copy constructor\n        Student student3 = new Student(student2);\n        student3.display();\n    }\n}\n```\n\nIn this example, the `Student` class demonstrates various types of constructors, including a default constructor, a parameterized constructor, and a copy constructor. It also includes a `display` method to output the student’s details."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "Title": "Unlocking the power of typeScript ",
+    "Desc": "Javascript is fantastic language of web development , but it can something feel a bit weelling",
+    "Start": "March 1,2024",
+    "thumb": "https://ideogram.ai/assets/image/lossless/response/KvYwBKL1QUSr1tTxALMFsw"
+  },
+  {
+    "id": "3",
+    "Title": "HTML",
+    "Desc": "Descover HTML the fun way. YOUR Essential guid for college and interview",
+    "Start": "February 1,2024",
+    "thumb": "https://th.bing.com/th/id/OIP.9wY1jXK1MXkX24uzBDcpVAHaDt?w=304&h=174&c=7&r=0&o=5&pid=1.7"
+  },
+  {
+    "id": "4",
+    "Title": "GRAPH",
+    "Desc": "Graph",
+    "Start": "January 1,2024",
+    "thumb": "https://th.bing.com/th/id/OIP.uIZWyW_tnilaX6GEdsh5UAHaDt?w=299&h=174&c=7&r=0&o=5&pid=1.7"
+  },
+  {
+    "id": "5",
+    "Title": "A Guid To Java Programming",
+    "Desc": "Let's Learn Java",
+    "Start": "January 1,2024",
+    "thumb": "https://th.bing.com/th/id/OIP.vMGYQQyWxenJqPV8pr1GDAHaDe?w=337&h=164&c=7&r=0&o=5&pid=1.7"
+  },
+  {
+    "id": "6",
+    "Title": "JavaScript",
+    "Desc": "Welcome to javaScript guid, This is EVERYTHING of JavaScript",
+    "Start": "January 1,2024",
+    "thumb": "https://namtech.com.au/wp-content/uploads/2019/10/45.png"
+  },
+  {
+    "id": "6",
+    "Title": "React",
+    "Desc": "Welcome to React guid, This is EVERYTHING of React",
+    "Start": "January 1,2024",
+    "thumb": " "
+  }
+]
