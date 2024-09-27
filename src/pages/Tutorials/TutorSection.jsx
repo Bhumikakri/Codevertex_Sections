@@ -2,7 +2,7 @@ import React from 'react';
 
 const TutorSection = (props) => {
   return (
-    <div className='group shadow-slate-300 shadow hover:shadow-none overflow-hidden rounded-xl bg-[#18245531] text-white  w-96 min-h-80 '>
+    <div className='group shadow-slate-900 shadow-lg hover:shadow-none overflow-hidden rounded-xl bg-[#060b20d5] text-white  w-96 min-h-80 '>
       <div className='overflow-hidden h-64 p-7'>
         <img className='group-hover:scale-110 overflow-hidden rounded-lg w-full h-full' src={props.datas.thumb || '/path/to/default-image.jpg'} alt={`${props.datas.Title} thumbnail`} />
       </div>

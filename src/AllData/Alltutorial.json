@@ -8,41 +8,39 @@
     "Details": [
       {
         "Topics": "What is oops",
-        "TopicsDescription": "In this article, we will learn about the Object-Oriented Programming (OOP) paradigm in Java and its key concepts.",
+        "TopicsDescription": "In this article, we will learn about the \nObject-Oriented Programming (OOP) paradigm in Java and its key concepts.",
         "FUlldetails": [
           {
             "heading": "What is OOP ?",
-            "fullDescription": "Object-Oriented Programming (OOP) in Java follows the same fundamental principles as in other languages. Java, being a strongly object-oriented language, encourages the use of objects and classes for structuring code, making it easier to manage, scale, and maintain."
+            "fullDescription": "  Object-Oriented Programming (OOP) in Java follows the same fundamental principles as in other languages. \n  Java, being a strongly object-oriented language, encourages the use of objects and classes for structuring code, \n  making it easier to manage, scale, and maintain."
           },
           {
             "heading": "Key Concepts of OOP in Java",
-            "fullDescription": "1. Class: A blueprint for creating objects. It defines properties (fields) and methods (functions).\n\n\n 2. Object: An instance of a class.\n3. Encapsulation: Protecting data by restricting access to methods.\n4. Inheritance: Allowing one class to inherit features from another.\n5. Polymorphism: Using a single method or function that behaves differently based on the object calling it.\n6. Abstraction: Hiding complex implementation details and showing only the functionality."
-          },
-          {
-            "heading": "Example Code: OOP in Java",
-            "fullDescription": "// Base Class (Parent)\nclass Animal {\n    protected String name;\n\n    // Constructor\n    public Animal(String name) {\n        this.name = name;\n    }\n\n    // Method that will be overridden\n    public void speak() {\n        System.out.println(\"This animal makes a sound.\");\n    }\n}\n\n// Derived Class (Child)\nclass Dog extends Animal {\n    private String breed;\n\n    // Constructor\n    public Dog(String name, String breed) {\n        super(name);  // Call to parent class constructor\n        this.breed = breed;\n    }\n\n    // Overriding the speak method\n    @Override\n    public void speak() {\n        System.out.println(name + \" says Woof!\");\n    }\n}\n\n// Another Derived Class (Child)\nclass Cat extends Animal {\n    private String color;\n\n    // Constructor\n    public Cat(String name, String color) {\n        super(name);\n        this.color = color;\n    }\n\n    // Overriding the speak method\n    @Override\n    public void speak() {\n        System.out.println(name + \" says Meow!\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating objects of Dog and Cat\n        Dog dog = new Dog(\"Buddy\", \"Golden Retriever\");\n        Cat cat = new Cat(\"Whiskers\", \"Gray\");\n\n        // Calling the speak method\n        dog.speak(); // Outputs: Buddy says Woof!\n        cat.speak(); // Outputs: Whiskers says Meow!\n\n        // Demonstrating Polymorphism\n        Animal[] animals = {dog, cat};\n        for (Animal animal : animals) {\n            animal.speak();  // Calls the appropriate speak method based on the object's type\n        }\n    }\n}\n"
+            "fullDescription": "   1. Class: A blueprint for creating objects. It defines properties (fields) and methods (functions).\n   2. Object: An instance of a class.\n   3. Encapsulation: Protecting data by restricting access to methods.\n   4. Inheritance: Allowing one class to inherit features from another.\n   5. Polymorphism: Using a single method or function that behaves differently \n       based on the object calling it.\n   6. Abstraction: Hiding complex implementation details and showing only the functionality."
           },
           {
             "heading": "Explanation",
-            "fullDescription": "1. Class Animal: This is the base class (or parent class). It has a constructor that takes the animal’s name and a method speak(), which is overridden by child classes.\n2. Class Dog and Cat: These are child classes inheriting from Animal. Each class has its own constructor and overrides the speak() method to provide specific behavior (i.e., what sound the animal makes).\n3. Polymorphism: We create an array of type Animal, but it holds objects of both Dog and Cat. When we call the speak() method on each element, Java determines which speak() method to execute based on the actual object type (either Dog or Cat)."
+            "fullDescription": "   1. Class Animal: \n        This is the base class (or parent class).It has a constructor that takes the animal’s name and a method speak(),\n        which is overridden by child classes.\n\n2. Class Dog and Cat: \nThese are child classes inheriting from Animal.\n    Each class has its own constructor and overrides the speak() method to provide specific behavior\n    (i.e., what sound the animal makes).\n\n3. Polymorphism: \n We create an array of type Animal, but\n    it holds objects of both Dog and Cat. When we call the speak() method on each element,\n    Java determines which speak() method to execute based on the actual object type (either Dog or Cat)."
           },
           {
             "heading": "Output",
-            "fullDescription": "Buddy says Woof!\nWhiskers says Meow!\nBuddy says Woof!\nWhiskers says Meow!"
+            "fullDescription": "   Buddy says Woof!\n   Whiskers says Meow!\n   Buddy says Woof!\n   Whiskers says Meow!"
           },
           {
             "heading": "Conclusion",
-            "fullDescription": "This example demonstrates the core OOP principles of encapsulation, inheritance, polymorphism, and abstraction in Java. By defining reusable classes and methods, OOP helps make code modular, easier to maintain, and scalable."
+            "fullDescription": "   This example demonstrates the core OOP principles of encapsulation, inheritance, polymorphism, and abstraction \n   in Java. By defining reusable classes and methods, \n   OOP helps make code modular, easier to maintain, and scalable."
           }
-        ]
+        ],
+        "codesName":""
+
       },
       {
-        "Topics": "what is Classes in Java OOP's",
+        "Topics": "What is Classes in Java OOP's",
         "TopicsDescription": "In Java's Object-Oriented Programming (OOP), a *class* is a blueprint or template that defines the structure and behavior (fields and methods) that the objects created from it will have. In other words, a class encapsulates data for the object and methods to manipulate that data.",
         "FUlldetails": [
           {
             "heading": " Key Characteristics of a Class in Java :",
-            "fullDescription": "1. *Fields (Attributes/Properties)*: Variables that hold the data or state of an object.\n\n 2. *Methods (Functions/Behaviors)*: Operations or actions that an object can perform. These usually manipulate the object's internal state or perform some task.\n\n 3. *Constructors*: Special methods that are called when an object of the class is instantiated (created). They initialize the object's properties."
+            "fullDescription": "1. *Fields (Attributes/Properties)*: Variables that hold the data or state of an object.\n 2. *Methods (Functions/Behaviors)*: Operations or actions that an object can perform. These usually manipulate the object's internal state or perform some task.\n\n 3. *Constructors*: Special methods that are called when an object of the class is instantiated (created). They initialize the object's properties."
           },
           {
             "heading": " Syntax of a Class",
